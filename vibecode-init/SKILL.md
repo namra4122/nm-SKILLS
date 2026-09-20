@@ -1,9 +1,9 @@
 ---
-name: agentic-project-setup
+name: vibecode-init
 description: Set up or repair a repository for plan-driven agentic coding. Use when starting a vibecoding project, adding AGENTS.md and project skills, establishing plans and progress tracking, configuring agent-safe verification, or removing contradictions between agent instructions and project documentation.
 ---
 
-# Agentic project setup
+# Vibecode Project initializing
 
 Build a repository control system that lets coding agents discover the product intent, constraints, architecture, active work, and proof commands without relying on chat history.
 
@@ -70,16 +70,16 @@ Completion criterion: the project type, stack, first vertical slice, non-goals, 
 
 Choose the smallest useful document set. Prefer these roles:
 
-| File | Authority |
-| --- | --- |
-| `AGENTS.md` | Stable repository-wide rules, architectural boundaries, safety constraints, and pointers to active sources of truth |
-| `.agents/plans/NNN-SLUG.md` | Temporary or living implementation specification for substantial work |
-| `.agents/skills/<name>/SKILL.md` | Repeatable project-specific operational workflow with a distinct trigger |
-| `PROGRESS.md` | Verified implemented state and known limitations |
-| `CONTRIBUTING.md` | Human contribution workflow and required checks |
-| `README.md` | Public product description, setup, and usage |
-| CI configuration | Machine-enforced verification gate |
-| Manifest scripts or task runner | Canonical executable commands |
+| File                             | Authority                                                                                                           |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| `AGENTS.md`                      | Stable repository-wide rules, architectural boundaries, safety constraints, and pointers to active sources of truth |
+| `.agents/plans/NNN-SLUG.md`      | Temporary or living implementation specification for substantial work                                               |
+| `.agents/skills/<name>/SKILL.md` | Repeatable project-specific operational workflow with a distinct trigger                                            |
+| `PROGRESS.md`                    | Verified implemented state and known limitations                                                                    |
+| `CONTRIBUTING.md`                | Human contribution workflow and required checks                                                                     |
+| `README.md`                      | Public product description, setup, and usage                                                                        |
+| CI configuration                 | Machine-enforced verification gate                                                                                  |
+| Manifest scripts or task runner  | Canonical executable commands                                                                                       |
 
 Do not create every file automatically. Create a file only when it has a distinct owner and lifecycle. For a small repository, `AGENTS.md`, one active plan, manifest scripts, and CI may be sufficient.
 
@@ -205,4 +205,3 @@ Report:
 - Verification actually performed, with exact outcomes.
 
 Do not claim a command, test, deployment, or product flow passed unless it was executed and observed.
-
